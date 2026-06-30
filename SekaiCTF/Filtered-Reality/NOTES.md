@@ -30,34 +30,28 @@ The queue file path from the original solve path is:
 
 Relying on that file is fragile on a fresh remote instance because there may be no seeded ref yet. `--self-seal` creates a ref, logs in as the shared clerk, leaks the seal nonce through the WordPress path confusion primitive, and seals the ref so the bot reviews it.
 
-## GitHub Token Handling
+## Assets
 
-A GitHub classic token was pasted into chat during this session. It should be considered compromised and revoked before any GitHub operation.
+Included screenshots:
 
-Do not commit, push, or log that token. After revocation, use one of these safer options:
+- `assets/filtered-reality-solves.png`
+- `assets/sekai-2026-leaderboard.png`
 
-```bash
-gh auth login
-```
+Downloaded meme images used in the public writeup:
 
-or:
+- `assets/meme-1.jpg` from `https://imgflip.com/i/7f9w9t`
+- `assets/meme-2.jpg` from `https://imgflip.com/i/7jpcmo`
 
-```bash
-gh auth status
-```
-
-Then create/push the local writeup repo with normal authenticated `gh` or `git`.
-
-## Suggested Publish Layout
+## Layout
 
 ```text
 ctf-writeups/
 └── SekaiCTF/
     └── Filtered-Reality/
+        ├── assets/
         ├── README.md
         ├── NOTES.md
         ├── solve.py
         ├── keeper_payload.php
         └── pop_payload.b64
 ```
-

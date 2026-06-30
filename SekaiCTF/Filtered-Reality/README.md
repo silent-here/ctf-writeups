@@ -2,7 +2,7 @@
 
 **Category:** Web  
 **Difficulty:** Hard  
-**Author:** Unknown  
+**Author:** dimasma0305  
 **Solved on:** 2026-06-29  
 **Flag:** `SEKAI{th3_d4y_n3v3r_3nds_1f_y0u_r34d_f4st}`
 
@@ -22,6 +22,16 @@ The final exploit is a chain:
 8. The gadget executes PHP, opens the keeper Unix socket, obtains a MAC oracle, performs SHA-256 length extension, and writes the returned flag to public uploads.
 
 The entire thing feels like filing paperwork at a cursed DMV, except the clerk eventually runs PHP for you. CTF moment.
+
+## Screenshots
+
+Challenge solve board:
+
+![Filtered Reality solve board](./assets/filtered-reality-solves.png)
+
+Final SekaiCTF 2026 leaderboard:
+
+![SekaiCTF 2026 leaderboard](./assets/sekai-2026-leaderboard.png)
 
 ## Vulnerability Chain
 
@@ -218,3 +228,8 @@ Me:       "Great, please review this definitely normal Signed Exchange."
 Chrome:   "Say less."
 ```
 
+And because every hard web solve eventually turns into sleep deprivation plus browser archaeology:
+
+![CTF meme 1](./assets/meme-1.jpg)
+
+![CTF meme 2](./assets/meme-2.jpg)
